@@ -1,4 +1,4 @@
-package Array;
+package Array.ArrayProblems;
 
 public class Leaders {
 	static void leader(int arr[], int n) {

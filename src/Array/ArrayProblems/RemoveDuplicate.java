@@ -1,4 +1,4 @@
-package Array;
+package Array.ArrayProblems;
 
 public class RemoveDuplicate {
 	static int remove(int arr[], int n) {

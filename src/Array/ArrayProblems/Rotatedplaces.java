@@ -1,4 +1,4 @@
-package Array;
+package Array.ArrayProblems;
 
 public class Rotatedplaces {
 	static void rotate(int arr[], int d, int n) {

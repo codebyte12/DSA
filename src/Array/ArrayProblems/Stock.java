@@ -1,4 +1,4 @@
-package Array;
+package Array.ArrayProblems;
 
 public class Stock {
 	static int stock(int arr[], int n) {

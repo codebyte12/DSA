@@ -1,4 +1,4 @@
-package Array;
+package Array.ArrayProblems;
 
 public class Frequency {
 	static void frequency(int arr[], int n) {

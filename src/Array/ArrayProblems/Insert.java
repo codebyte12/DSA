@@ -1,6 +1,6 @@
-package Array;
+package Array.ArrayProblems;
 
-public class Insert
+public class
 		}
 		
 	}

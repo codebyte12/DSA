@@ -1,8 +1,8 @@
-package Array;
+package Array.ArrayProblems;
 
 public class ReverseanArray {
 	static void reverse(int arr[],int n) {
-		int temp = 0;
+		int temp;
 		int first=0;
 		int last=n-1;
 		while(first<last) {

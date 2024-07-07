@@ -1,6 +1,5 @@
-package Array;
+package Array.ArrayProblems;
 
-import java.util.Arrays;
 
 public class SecondLargest {
 	static int secondlargest(int arr[], int n) {

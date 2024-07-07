@@ -1,4 +1,4 @@
-package Array;
+package Array.ArrayProblems;
 
 public class ZeroestoEnd {
 	static void zeroes(int arr[], int n) {
