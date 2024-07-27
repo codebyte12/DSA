@@ -13,28 +13,27 @@ public class SecondLargest {
 	//another approch to solve this problem will be
 	
 	//sort the arr
-		int largest=0;
-	    int slargest=-1;
-	    for(int i=0; i<n; i++)
-	        if(arr[i]>largest){
-	         largest=arr[i];
-	         slargest=largest;
-	         
-	        }
-	        for(int i=0; i<n; i++)
-	         if(arr[i]<largest && arr[i]>slargest){
-	        slargest=arr[i];
-	        }
-	    
-	    return slargest;
-		}
-	
-	}
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-           int arr[]= {10,5,8,20};
-           int n=arr.length;
-           System.out.println(secondlargest(arr,n));
-	}
 
+        int largest = 0;
+        int slargest = -1;
+        
+        // Find the largest element
+        for (int i = 0; i < n; i++) {
+            if (arr[i] > largest) {
+                slargest = largest;
+                largest = arr[i];
+            } else if (arr[i] > slargest && arr[i] != largest) {
+                slargest = arr[i];
+            }
+        }
+        
+        return slargest;
+    }
+    
+    public static void main(String[] args) {
+        
+        int arr[] = {10, 5, 8, 20};
+        int n = arr.length;
+        System.out.println(secondlargest(arr, n));
+	}
 }
