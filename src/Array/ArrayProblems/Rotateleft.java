@@ -21,3 +21,6 @@ public class Rotateleft {
 	}
 
 }
+//the TC is O(n)
+//the SC is O(1) for extra variable to store the element
+//the SC of the algorithm will be O(n) as we are only modifying the array
