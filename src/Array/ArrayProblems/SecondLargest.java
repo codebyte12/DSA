@@ -31,7 +31,7 @@ package Array.ArrayProblems;
                         slargest=arr[i];                            //but greator than second largest than update that element as slargest
                     }
                  }
-                 return slargest;
+                 return slargest;                    //TC of this approch is O(n) as single traversal
         }
         public static void main(String[] args) {
        int arr[] = {10, 5, 8, 20};
