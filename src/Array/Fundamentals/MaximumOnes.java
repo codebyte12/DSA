@@ -1,4 +1,4 @@
-package Array.ArrayProblems;
+package Array.Fundamentals;
 
  class MaximumOnes {
    static int maximumConsecutive1(int arr[], int n){
@@ -9,7 +9,7 @@ package Array.ArrayProblems;
                         count = 0;           //if encounter value other than 1 than count will reset to 0;
                     }else
                     count++;                  // if encounter with 1 then count will increment
-                    result=Math.max(result, count);
+                    result = Math.max(result, count);
                   }
                   return result;
    }

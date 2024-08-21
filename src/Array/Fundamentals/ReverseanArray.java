@@ -1,4 +1,4 @@
-package Array.ArrayProblems;
+package Array.Fundamentals;
 
 public class ReverseanArray {
 	static void reverse(int arr[],int n) {
@@ -14,18 +14,13 @@ public class ReverseanArray {
 		}
 		
 	}
-	static void printArray(int arr[], int n) {
-		for(int i=0; i<n; i++) {
-			System.out.print(arr[i]+ " ");
+	
+	public static void main(String[] args) {
+		int arr[]= {10,5,7,30};
+		int n=arr.length;
+		reverse(arr,4);
+		for(int i=0; i<n; i++){
+         System.out.print(arr[i] + " ");
 		}
 	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int arr[]= {10,5,7,30};
-		reverse(arr,4);
-		printArray(arr,4);
-
-	}
-
 }

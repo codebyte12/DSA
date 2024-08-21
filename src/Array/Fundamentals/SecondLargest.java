@@ -1,4 +1,4 @@
-package Array.ArrayProblems;
+package Array.Fundamentals;
 
 
 /*public class SecondLargest {
