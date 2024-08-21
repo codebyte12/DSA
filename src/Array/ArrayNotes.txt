@@ -1,1 +1,91 @@
-git 
+Array:-  (i) simplest DS
+        (ii) collection of similar type of DS at contiguous memory location
+        (iii) elements in the array DS can be acccessed randomly with the help of index no.
+        (iv) the length of the array DS is 0 to n-1 whr 0 is first index & n-1 is last index
+        (v) Array uses heap memeory to store data
+        (vi) Array store data elements in blocks
+
+        Heap memeory - allocates at runtime & is dynamic memory allocation. It allows creation of object & ds whose
+                       size can be determined at runtime
+
+
+                       Eg - A B C D E......             - Array Elements
+                            0              N-1          - Index of array
+
+    There are two types of array:-
+
+    (a) Fixed Size Array:- As the name suggest the size of these arrays are fixed at the time of declaration
+                           Fixed size array can be declared in following ways-
+
+                           Eg:- (i) int arr[100]                  - size of array is 100
+                                (ii) int arr[n] 
+                                (iii) int arr[]={10,15,30,40}      - size of array is n whr n might be user input
+         Note:- All three declared array memory will be allocated in stack if it is declared inside method or function
+                                 eg:- public void Array() {
+                                int arr[100]; // Memory allocated on the stack
+                                   }
+
+
+                                (iii) int[] arr = new int[n]     //heap allocated memory allocation
+
+             Note:- In C/C++/Java the fixed size arr memory is allocated in two ways:-
+                   (i) stack memory where local variable is stored 
+                   (ii) heap memeory where dynamic size array is stored
+
+ 
+   (b) Dynamic Size Array:-(i) Resized automatically i.e when dynamic size arr is declared its size is multiplied by 1.5x
+                               of original arr present
+                          (ii) In java collections are used to declare dynamic size array
+                          (iii) Dynamic size arrays can't be created of primitive data types such as int, str, char
+
+                            Eg:- ArrayList, HashSet, HashMap
+                              (i) ArrayList<Integer>l=new ArrayList<>();
+                              (ii) HashSet<Integer>s=new HashSet<>();
+                              (iii) HashMap<Integer>m=new HashMap<>();
+                              
+           Note:- LinkedArrayList, LinkedHashSet, LinkedHashMap is used to preserve the index of original array as
+                  collections are dynamic size array so insertion, deletion, updation of array indexes are dynamic.  
+
+
+            There are many operations performed on array such as:-
+              (i) Searching      
+                       Note:- (i) Searching of an element in arr can be done in O(n) time coplexcity i.e 
+                                  worst case because we have to traverse whole arr.
+                              (ii) If element is present in the 0th index or n-1 index then searching can be done 
+                                   in O(1) tc.   
+              
+              (ii) Sorting:- There are many methods of sorting in arrays
+                           (i) Selection Sort
+                           (ii) Bubble sort
+                           (iii) Insertion Sort
+                           (iv) Quick Sort
+                           (v) Merge Sort
+
+                    Note:- Quick Sort & merge Sort are divide & conqueror algorithms       
+
+              (iii)Insert element in array      
+                        Note:- (i) We can't insert an element in a fixed size array if it is already full
+                               (ii) We can insert only if it has extra spacefor newly inserted element
+                                     Eg:- arr[]={5,10,20,_ ,_, _}  //here three spaces are left in fixed size arr
+
+                               (iii) Insertion at the end will cost O(1) tc as no shifting will take place
+                               (iv) Insertion at the beginning will cost O(n) as elements will be shifted n places
+
+                        Note:-(i) Although when we are inserting an element in dynamic size array the tc will always
+                                  be O(n) in worst case as if allocated array is full then compiler creates a new 
+                                  arr(1.5x mostly) & copy these elements into new arr.   
+
+                              (ii) O(1)- if space is available in the current Dynamic size array
+
+                             (iii) Dynamic arrays prelocates some extra memory & thats how they ensures Average Time
+                                   complexity always O(1) i.e if we have to insert then they use prealocated memory  
+
+              (iv) Delete element from array 
+                              Note:-(i) deletion at the start/middle will cost O(n) time complexcity as shifting
+                                        will take place
+                                    (ii) delete of element at the end will cost O(1) tc.
+
+              (v) Updatation of array                      
+
+
+                                
