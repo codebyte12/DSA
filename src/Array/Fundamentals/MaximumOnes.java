@@ -7,9 +7,10 @@ package Array.Fundamentals;
                   for(int i=0; i<n; i++){
                     if(arr[i]!=1){
                         count = 0;           //if encounter value other than 1 than count will reset to 0;
-                    }else
+                    }else{
                     count++;                  // if encounter with 1 then count will increment
                     result = Math.max(result, count);
+                    }
                   }
                   return result;
    }
