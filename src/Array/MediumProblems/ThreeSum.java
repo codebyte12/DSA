@@ -101,7 +101,7 @@ public static void main(String[] args) {
 */
 
 /*TC - O(nlogn) + O(n^2) */
-/*SC - O(no of unique triplets) *2    one set is used to store the triplets another is used to return the triplets   */
+/*SC - O(no of unique triplets)   */
 
 
 public class ThreeSum {
@@ -139,8 +139,8 @@ public class ThreeSum {
                 }
             }
         }
-       List<List<Integer>>ans=new ArrayList<>(triplets);     //space used to return the triplets
-       return ans;
+    
+       return triplets;
     } 
 
     public static void main(String[] args) {
