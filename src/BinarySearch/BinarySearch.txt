@@ -1,0 +1,48 @@
+Binary Search :- A searching algorithm which is used to search a given element present in an array;
+              :- Binary Search algorithm is applicable only on Sorted arr;
+              :- Binary Search is just not limited to arrays it can be applied to anything such as answers
+              :- It divides the whole array into two half by calculating mid and then search for an element by eliminating left half right half
+
+              Eg :- Suppose we have to search for alphabet e in dictionary
+                 :- With the binary search we will divide it into two half 
+                 :- The mid will be m we know in the right half there is no probability of e so will eliminate the right half 
+                 :- & search for e in the left half by again calulating the mid till e is not found
+
+              (i)   The low pointer will be at index 0;
+              (ii)  The high pointer will be at last index i.e n-1;
+              (iii) mid = (low+high)/2;
+              (iv) mid= low+(high-low)/2; in case of large values to stop integer overflow;
+                   
+                   Eg :- Suppose the search space is between 0 -> Integer.MAX_VALUE;
+                                       -> if both low & high points out Integer.MAX_VALUE;
+                                       -> it will be 2x of Integer.MAX_VALUE and cant be stored in integer
+
+             
+     Code -:
+      int binarySearch(int arr[], int x){
+        int low=0;
+        int high=n-1;
+        while(low<=high){
+            int mid=low+high/2;
+            if(arr[mid]==x){
+                return mid;
+            }else if(arr[mid]>x){
+                high=mid-1;
+            }else{
+                low=mid+1;
+            }
+        }
+        return -1;
+      }                
+
+
+       Time Complexity :- The tc for the binary search algorithm will be logn 
+                       -> the algorithm divides the whole sorted array into two halves & then search for element in respected arr
+
+                  Eg :- size of arr = 32 
+                        -> divided into 32->16->8->4->2->1
+                        -> Total operation = 6  i.e 32 = 2^5;
+                        -> TC will be log(base2)n
+        
+                                       
+               
