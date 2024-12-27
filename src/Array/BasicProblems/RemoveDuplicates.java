@@ -59,7 +59,7 @@ public class RemoveDuplicates {
 //       for(int i:arr){                                           //Interate through arr
 //          s.add(i);                     //add elements to set as set doesn,t contain duplicates it will add uniqueEle
 //       }
-
+ 
 
 //       int uniquesElements=s.size();                //store the size of unique elents
 //       int index=0;                                 //now place the pointer on actual arr and iterate the set
